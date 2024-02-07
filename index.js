@@ -4,7 +4,6 @@ const path = require('node:path');
 const { Client, Collection, Events, GatewayIntentBits } = require('discord.js');
 const { token } = require('./config/config.json')
 
-
 //Create a new client instance
 const client = new Client({intents: [GatewayIntentBits.Guilds]});
 
@@ -93,7 +92,6 @@ function handleCommandInteractions() {
 // Retrive Commands from "Commands Directory"
 retriveCommands();
 handleCommandInteractions();
-
 
 
 //When client is ready, run code:
